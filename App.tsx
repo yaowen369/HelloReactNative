@@ -6,26 +6,50 @@
  */
 
 import React, {useState} from 'react';
-import {Text, TextInput, View} from 'react-native';
+import { Image, ScrollView, Text, TextInput, View } from "react-native";
+
+const logo = {
+  uri: 'https://reactnative.dev/img/tiny_logo.png',
+  width: 64,
+  height: 64,
+};
 
 function App(): JSX.Element {
-  const [text, setText] = useState('');
 
   return (
-    <View style={{padding: 10}}>
-      <TextInput
-        style={{height: 40}}
-        placeholder="Type here to translate!"
-        onChangeText={text => setText(text)}
-        defaultValue={text}
-      />
-      <Text style={{padding: 10, fontSize: 42}}>
-        {text
-          .split(' ')
-          .map(word => word && '🍕')
-          .join(' ')}
-      </Text>
-    </View>
+    <ScrollView>
+      <Text style={{fontSize: 96}}>Scoll me plz</Text>
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Text style={{fontSize: 96}}>If you like</Text>
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Text style={{fontSize: 96}}>Scrolling down</Text>
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Text style={{fontSize: 96}}>what the best</Text>
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Text style={{fontSize: 96}}>Framework around?</Text>
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Image source={logo} />
+      <Text style={{fontSize: 96}}>React Native</Text>
+    </ScrollView>
   );
 }
 
