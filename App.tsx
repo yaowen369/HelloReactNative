@@ -5,8 +5,8 @@
  * @format
  */
 
-import React from "react";
-import { Image, ScrollView, Text, View } from "react-native";
+import React from 'react';
+import {Image, ScrollView, Text, TextInput, View} from 'react-native';
 
 function App(): JSX.Element {
   return (
@@ -15,12 +15,12 @@ function App(): JSX.Element {
       <View>
         <Text>Some more text</Text>
         <Image
-          source={{ uri: 'h"https://reactnative.dev/docs/assets/p_cat2.png"}
-          style={{ width: 200, height: 200 }}
+          source={{uri: 'https://reactnative.dev/docs/assets/p_cat2.png'}}
+          style={{width: 200, height: 200}}
         />
       </View>
       <TextInput
-        style={{ height: 40, borderColor: 'g"gray"borderWidth: 1 }}
+        style={{height: 40, borderColor: 'gray', borderWidth: 1}}
         defaultValue="you can type in me"
       />
     </ScrollView>
